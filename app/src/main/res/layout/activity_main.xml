@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3000000"
-    tools:context="com.yio.wheellayout.MainActivity">
+    android:orientation="vertical">
 
-    <com.yio.wheellayout.CursorWheelLayout
-        android:id="@+id/wheel_layout"
-        android:layout_width="360dp"
-        android:layout_height="180dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        app:wheelItemRadio="0.08"
-        app:wheelItemRotateMode="outward"
-        app:wheelPaddingRadio="0.15"
-        app:wheelSelectedAngle="270" />
-    <!-- wheelItemRadio:child的宽占parent的0.1=1/12 -->
-    <!--wheelPaddingRadio:parent的padding占parent的比例-->
-</RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

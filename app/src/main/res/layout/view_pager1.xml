@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yio.customview.pager1.Pager1RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    tools:context="com.yio.customview.MainActivity">
+
+    <com.yio.customview.pager1.CursorWheelLayout
+        android:id="@+id/wheel_layout"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:wheelItemRadio="0.08"
+        app:wheelItemRotateMode="outward"
+        app:wheelPaddingRadio="0.15"
+        app:wheelSelectedAngle="270" />
+    <!-- wheelItemRadio:child的宽占parent的0.1=1/12 -->
+    <!--wheelPaddingRadio:parent的padding占parent的比例-->
+</com.yio.customview.pager1.Pager1RelativeLayout>
